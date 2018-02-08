@@ -19,7 +19,7 @@ class RingBuffer:
     # @return: index, incremented by 1
     def _increment(self, index):
         # One would usually use modulo here, but a conditional
-        # is actually faster that performing the mod operation
+        # is actually faster than performing the mod operation
         # every time.
         if index + 1 > self.delay:
             return 0
